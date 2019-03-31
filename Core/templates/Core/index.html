@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block title %}State list{% endblock %}
+
+{% block content %}
+<h1>States</h1>
+
+{% for state in states %}
+    <p>{{ state.name }}</p>
+{% endfor %}
+{% endblock %}
