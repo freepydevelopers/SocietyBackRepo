@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="82a70af7-8269-49e5-ab76-8f973e220c30" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593895535602</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="admin project ready till master creation">
+      <created>1593895612845</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1593895612845</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -139,10 +147,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="449" y="156" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.834@0.0.1536.834" timestamp="1593880201908" />
-    <state x="395" y="0" key="CommitChangelistDialog2" timestamp="1593895533217">
+    <state x="395" y="0" key="CommitChangelistDialog2" timestamp="1593895610566">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="395" y="0" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1593895533217" />
+    <state x="395" y="0" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1593895610566" />
     <state width="757" height="214" key="GridCell.Tab.0.bottom" timestamp="1593886894276">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
