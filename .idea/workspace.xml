@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="82a70af7-8269-49e5-ab76-8f973e220c30" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Core/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/Core/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/migrations/0002_auto_20190322_0021.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/migrations/0003_auto_20190331_0218.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/migrations/0004_auto_20190331_0418.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/migrations/0005_building_elevators_id.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/migrations/0006_remove_building_elevators_id.py" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1V38yvVwU0OTSUy89hcS7wHihlh" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/venv" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="SocietyBackRepo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="F:\root\SocietyBackRepo\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manage.py" />
+      <option name="PARAMETERS" value="runserver" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="manage" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="SocietyBackRepo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="F:\root\SocietyBackRepo\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manage.py" />
+      <option name="PARAMETERS" value="runserver" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="82a70af7-8269-49e5-ab76-8f973e220c30" name="Default Changelist" comment="" />
+      <created>1554001770643</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1554001770643</updated>
+    </task>
+    <task id="LOCAL-00001" summary="early 5">
+      <created>1554001815530</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1554001815530</updated>
+    </task>
+    <task id="LOCAL-00002" summary="admin project ready till master creation">
+      <created>1554002748314</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1554002748314</updated>
+    </task>
+    <task id="LOCAL-00003" summary="admin project ready till master creation">
+      <created>1593886968402</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1593886968402</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="early 5" />
+    <MESSAGE value="admin project ready till master creation" />
+    <option name="LAST_COMMIT_MESSAGE" value="admin project ready till master creation" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="449" y="156" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1593880201908">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="449" y="156" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.834@0.0.1536.834" timestamp="1593880201908" />
+    <state x="395" y="0" key="CommitChangelistDialog2" timestamp="1593886967177">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="395" y="0" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1593886967177" />
+    <state width="757" height="214" key="GridCell.Tab.0.bottom" timestamp="1593886894276">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="757" height="214" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1593886894276" />
+    <state width="757" height="214" key="GridCell.Tab.0.center" timestamp="1593886894276">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="757" height="214" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1593886894276" />
+    <state width="757" height="214" key="GridCell.Tab.0.left" timestamp="1593886894276">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="757" height="214" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1593886894276" />
+    <state width="757" height="214" key="GridCell.Tab.0.right" timestamp="1593886894276">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="757" height="214" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1593886894276" />
+    <state x="579" y="331" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593886948024">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="579" y="331" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.834@0.0.1536.834" timestamp="1593886948024" />
+    <state x="477" y="150" width="581" height="534" key="find.popup" timestamp="1593886614610">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="477" y="150" width="581" height="534" key="find.popup/0.0.1536.834@0.0.1536.834" timestamp="1593886614610" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Core/models.py</url>
+          <line>117</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
