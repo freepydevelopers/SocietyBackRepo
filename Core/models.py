@@ -115,7 +115,7 @@ class City(models.Model):
         db_table = 'city'
 
     def __str__(self):
-        return "".join(self.name, ", ", self.state.name)
+        return self.name + ", " + self.state.name
 
 
 class Address(models.Model):
@@ -201,8 +201,12 @@ class FloorEnum(models.Model):
     def __str__(self):
         return self.name
 
+    class Meta:
+        verbose_name = 'floordetail'
+        verbose_name_plural = 'floordetails'
+        db_table = 'floordetail'
 
-# define floor plan under society e.g. Odd, Even, Refusee floor
+# define floor plan under society e.g. Odd, Even, Refuse floor
 class FloorPlan(models.Model):
     name = models.CharField(max_length=25)
     society = models.ForeignKey(Society, on_delete=models.CASCADE)
@@ -339,7 +343,7 @@ class Floor(models.Model):
     floordetail = models.ForeignKey(FloorEnum, on_delete=models.CASCADE)
     floorplan = models.ForeignKey(FloorPlan, on_delete=models.CASCADE)
     building = models.ForeignKey(Building, on_delete=models.CASCADE)
-    #society = models.ForeignKey(Society, on_delete=models.CASCADE)
+    society = models.ForeignKey(Society, on_delete=models.CASCADE)
 
     createdon = models.DateTimeField(auto_now_add=True)
     updatedon = models.DateTimeField(auto_now_add=True)
