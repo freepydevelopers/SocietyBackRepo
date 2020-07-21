@@ -20,9 +20,3 @@ def details(request, id):
     just_object_result = array_result[1:-1]
     return JsonResponse(just_object_result, safe=False)
 
-class Hello(APIView):
-    def get(self, request, format=None):
-        return Response("Pune")
-
-
-

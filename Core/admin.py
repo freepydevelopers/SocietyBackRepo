@@ -1,10 +1,17 @@
 from django.contrib import admin
-from .models import UserType, Profile, MemberGroup, Membership, State, City, Address, Society, Group, Doc, FloorEnum, FloorPlan, UnitPlan, Elevator, Building, Floor, Flat, FlatOwner, Lease, Parking, Vehicle, Complain, Meeting,  Notice, BillSetup, Maintenance
+from .models import Profile, MemberGroup, Membership, State, City, Address, Society, Group, Doc, FloorEnum, FloorPlan, UnitPlan, Elevator, Building, Floor, Flat, FlatOwner, Lease, Parking, Vehicle, Complain, Meeting,  Notice, BillSetup, Maintenance
 
+# class Meta:
+#   abstract = True
+
+
+# use search_fields = ['question_text']
+# Change list pagination, search boxes, filters, date-hierarchies, and column-header-ordering
 
 class CityModelInline(admin.TabularInline):
     model = City
     extra = 1
+    readonly_fields = ('uniqId',)
 
 class StateModelAdmin(admin.ModelAdmin):
     field = ['name']
@@ -12,18 +19,23 @@ class StateModelAdmin(admin.ModelAdmin):
 
 admin.site.register(State, StateModelAdmin)
 
-
-admin.site.register(UserType)
-
 admin.site.register(Profile)
 
 admin.site.register(MemberGroup)
 
 admin.site.register(Membership)
 
-admin.site.register(Address)
+class AddressModelAdmin(admin.ModelAdmin):
+    model = Address
+    readonly_fields = ('uniqId',)
 
-admin.site.register(Society)
+admin.site.register(Address, AddressModelAdmin)
+
+class SocietyModelAdmin(admin.ModelAdmin):
+    model = Society
+    readonly_fields = ('uniqId',)
+
+admin.site.register(Society, SocietyModelAdmin)
 
 admin.site.register(Group)
 
@@ -35,9 +47,17 @@ admin.site.register(FloorPlan)
 
 admin.site.register(UnitPlan)
 
-admin.site.register(Elevator)
+class ElevatorModelAdmin(admin.ModelAdmin):
+    model = Elevator
+    readonly_fields = ('uniqId',)
 
-admin.site.register(Building)
+admin.site.register(Elevator, ElevatorModelAdmin)
+
+class BuildingModelAdmin(admin.ModelAdmin):
+    model = Building
+    readonly_fields = ('uniqId',)
+
+admin.site.register(Building, BuildingModelAdmin)
 
 admin.site.register(Floor)
 
@@ -51,15 +71,35 @@ admin.site.register(FlatOwner)
 
 admin.site.register(Lease)
 
-admin.site.register(Parking)
+class ParkingModelAdmin(admin.ModelAdmin):
+    model = Parking
+    readonly_fields = ('uniqId',)
 
-admin.site.register(Vehicle)
+admin.site.register(Parking, ParkingModelAdmin)
 
-admin.site.register(Complain)
+class VehicleModelAdmin(admin.ModelAdmin):
+    model = Vehicle
+    readonly_fields = ('uniqId',)
 
-admin.site.register(Meeting)
+admin.site.register(Vehicle, VehicleModelAdmin)
 
-admin.site.register(Notice)
+class ComplainModelAdmin(admin.ModelAdmin):
+    model = Complain
+    readonly_fields = ('uniqId',)
+
+admin.site.register(Complain, ComplainModelAdmin)
+
+class MeetingModelAdmin(admin.ModelAdmin):
+    model = Meeting
+    readonly_fields = ('uniqId',)
+
+admin.site.register(Meeting, MeetingModelAdmin)
+
+class NoticeModelAdmin(admin.ModelAdmin):
+    model = Notice
+    readonly_fields = ('uniqId',)
+
+admin.site.register(Notice, NoticeModelAdmin)
 
 admin.site.register(BillSetup)
 

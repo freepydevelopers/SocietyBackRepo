@@ -13,26 +13,33 @@ from django.dispatch import receiver
 
 
 # Main roles in system
-class UserType(models.Model):
-    ADMIN = 'adm'
-    OWNER = 'own'
-    TENANT = 'ten'
-    EMPLOYEE = 'emp'
-    USERTYPE_CHOICES = (
-        (ADMIN, 'Admin'),
-        (OWNER, 'Owner'),
-        (TENANT, 'Tenant'),
-        (EMPLOYEE, 'Employee')
-    )
-    status = models.CharField(max_length=3, choices=USERTYPE_CHOICES, default=OWNER)
-
-    def __str__(self):
-        return self.name
-
+# retired
+# class UserType(models.Model):
+#     ADMIN = 'adm'
+#     OWNER = 'own'
+#     TENANT = 'ten'
+#     EMPLOYEE = 'emp'
+#     USERTYPE_CHOICES = (
+#         (ADMIN, 'Admin'),
+#         (OWNER, 'Owner'),
+#         (TENANT, 'Tenant'),
+#         (EMPLOYEE, 'Employee')
+#     )
+#     status = models.CharField(max_length=3, choices=USERTYPE_CHOICES, default=OWNER)
+#
+#     def __str__(self):
+#         return self.status
 
 class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
-    usertype = models.ForeignKey(UserType, on_delete=models.CASCADE, null=True)
+    # usertype = models.ForeignKey(UserType, on_delete=models.CASCADE, null=True)
+    USERTYPE_CHOICES = (
+        ('ADMIN', 'Admin'),
+        ('OWNER', 'Owner'),
+        ('TENANT', 'Tenant'),
+        ('EMPLOYEE', 'Employee')
+    )
+    usertype = models.CharField(max_length=10, choices=USERTYPE_CHOICES, default='OWNER', blank=True)
     TITLE_CHOICES = (
         ('mr', 'Mr'),
         ('mrs', 'Mrs'),
@@ -55,6 +62,9 @@ class Profile(models.Model):
         verbose_name = 'profile'
         verbose_name_plural = 'profiles'
         db_table = 'profile'
+
+    def __str__(self):
+        return self.user.first_name + ' ' + self.user.last_name
 
 @receiver(post_save, sender=User)
 def create_user_profile(sender, instance, created, **kwargs):
@@ -100,7 +110,7 @@ class State(models.Model):
 class City(models.Model):
     uniqId = models.UUIDField(default=uuid.uuid4, unique=True)
     name = models.CharField(max_length=100)
-    # owner = models.ForeignKey('auth.User', related_name='prelimcity', on_delete=models.CASCADE)3
+    # owner = models.ForeignKey('auth.User', related_name='prelimcity', on_delete=models.CASCADE)
     state = models.ForeignKey(State, on_delete=models.CASCADE, null=True)
 
     createdon = models.DateTimeField(auto_now_add=True)
@@ -546,7 +556,7 @@ class Notice(models.Model):
 
 
 class BillSetup(models.Model):
-    name = models.CharField(max_length=25)  # eg. 1. menenance per sqft 1.7/month 2. ganesh vargani / headcount
+    name = models.CharField(max_length=25)  # eg. 1. maintenance per sqft 1.7/month 2. ganesh vargani / headcount
     amount = models.IntegerField()
 
     createdon = models.DateTimeField(auto_now_add=True)
@@ -559,7 +569,7 @@ class BillSetup(models.Model):
 
 
 class Maintenance(models.Model):
-    amount = models.IntegerField()  # readonly #user flat carpet area * billsetup(mentain row)
+    amount = models.IntegerField()  # readonly #user flat carpet area * billsetup(maintenance row)
     durationinmonths = models.IntegerField()
     frommonth = models.DateTimeField(null=True)
 

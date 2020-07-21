@@ -22,11 +22,6 @@ class ListCityView(generics.ListAPIView):
     serializer_class = CitySerializer
 
 
-class Hello(APIView):
-    def get(self, request, format=None):
-        return Response("Pune")
-
-
 @api_view()
 def details(request, id):
     city = get_object_or_404(City, id=id)
